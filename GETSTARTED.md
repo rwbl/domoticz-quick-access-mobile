@@ -1,12 +1,14 @@
 # domoticz_quick_access_mobile
 A Domoticz Custom User Interface, accessible from any browser, as a responsive, mobile-first front-end. 
+See "README.md".
 
 ## Get Started
 To get started, recommend to use the basic example with HTML file "basic.html".
+
 The advanced example is "index.html". Read the source to explore how to use - but same concept as "basic.html".
 
 ## Step 1
-Create a folder on the Domoticz system:
+Create a subfolder "qam" on the Domoticz system as part of the www folder:
 ```
 <domoticz-path>/www/qam
 ```
@@ -27,11 +29,12 @@ Extract the archive “qam.zip” to the previous created folder, resulting in f
 
 ## Step 3
 Create or Select Domoticz room plan(s) and note the Idx of the room plan(s).
+
 Recommend to start with 2 room plans:
 * one to control switches using buttons and
 * the other to display information via burger menu.
 
-Get the Domoticz IP address:port of the Domoticz system to access, i.e. 192.168.1.179:8080.
+Get the Domoticz IP address:port of the Domoticz system to access, i.e. 192.168.N.NNN:8080.
 
 ## Step 4
 Define the Domoticz IP address:port and the room plans in the HTML page "basic.html".
