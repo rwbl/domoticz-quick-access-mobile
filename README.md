@@ -11,6 +11,8 @@ To develop for personal use only, a Custom Web Frontend for the [Domoticz Home A
 * interacting with Domoticz using JSON via [HTTP API requests](https://www.domoticz.com/wiki/Domoticz_API/JSON_URL%27s).
 * flexible in maintaining the Domoticz devices for the various functions by using Domoticz roomplans & device properties to setup the HTML interface.
 
+![android-0](https://user-images.githubusercontent.com/47274144/95470037-9a0ded80-0980-11eb-9877-340d5004e3fb.png)
+
 This application is called Domoticz Quick Access Mobile **QAM**.
 
 ## Background
