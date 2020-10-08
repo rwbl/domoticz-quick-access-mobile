@@ -59,6 +59,7 @@ http://domoticz-ip:port/qam/basic.html
 ![qam-basic](https://user-images.githubusercontent.com/47274144/95470790-7eefad80-0981-11eb-8e7a-d74d004adb12.png)
 
 In the webbrowser, press F12 and checkout the console for informations/errors.
+
 _Note_
 The debug information is set by the flag DEBUG in the JavaScript section:
 ```
