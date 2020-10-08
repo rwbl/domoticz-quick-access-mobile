@@ -1,4 +1,4 @@
-# ToDo domoticz_quick_access_mobile
+# ToDo domoticz-quick-access-mobile
 
 ### Checkout cors error 127.0.0.1
 
