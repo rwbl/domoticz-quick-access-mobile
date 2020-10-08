@@ -13,8 +13,6 @@ To develop for personal use only, a Custom Web Frontend for the [Domoticz Home A
 
 This application is called Domoticz Quick Access Mobile **QAM**.
 
-![android-0](https://user-images.githubusercontent.com/47274144/95469845-603ce700-0980-11eb-988f-a143ed37f244.png)
-
 ## Background
 The application has been developed, based on a request to enable simple access to Domoticz from any device in a local network.
 Meant by simple access, is a user interface with limited components on a mobile device screen having large sized components, like text, buttons, dropdowns etc..
