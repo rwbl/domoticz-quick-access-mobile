@@ -19,6 +19,7 @@ This application is called Domoticz Quick Access Mobile **QAM**.
 The application has been developed, based on a request to enable simple access to Domoticz from any device in a local network.
 Meant by simple access, is a user interface with limited components on a mobile device screen having large sized components, like text, buttons, dropdowns etc..
 Functions are grouped, separated by horizontal rules. Each function having similar layout depending its required components. The screen must be scrollable to select a function.
+
 A function is used to 
 * control dedicated devices, like lights, thermostats, shutter/blinds
 * inform about climate & key dates
@@ -30,7 +31,7 @@ The following libraries & styles are used and stored locally (instead accessing 
 * [Font Awesome Free](https://fontawesome.com/) 5.14.0 - @fontawesome - [License](https://fontawesome.com/license/free) (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License).
 * Versions are subject to change
 
-The UI is based upon the HTML Bootrap Grid.
+**The UI is based upon the HTML Bootrap Grid.**
 Each control function has several rows with grids depending its features. The inform functions make use of modal dialogs with lists.
 The devices used for a function are populated from the related Domoticz roomplan.
 The communication between the UI and Domoticz is via HTTP API requests to the Domoticz engine. The Domoticz engine to action / response accordingly.
@@ -38,8 +39,10 @@ Depending the function selected, an Domoticz Automation Event, dzVents Lua, is t
 JavaScrip jQuery.getJSON function is handling the HTTP API requests.
 
 The main file is "index.html". It has sections:
+
 **HEAD**
 * Include the third party styles and libraries (stored locally) plus some additional styles.
+
 **BODY**
 * _HTML_ for the user interface, based on the Bootstrap Grid, with selectors.
 * _JavaScript_ to interact, via HTTP API requests, with Domoticz triggered by HTML components and to set data in HTML selectors from HTTP API responses, but also to change Domoticz devices.
@@ -64,6 +67,7 @@ Important is the key status to ensure the data is properly fetched.
 Below an extract of the key:value pairs. The key result is the array containing all devices with its properties.
 The device properties are device dependend, but for all the DQAM functions Data, Name, PlanID and idx are used (the name is case sensitive).
 The data property is used to display device value.
+
 _Exception_
 The data used for the function Climate, device Wind extracts the windspeed and direction from the data property.
 
@@ -72,7 +76,7 @@ The plan idx=23, which is Klima ("Climate") used in a modal information dialog w
 
 **Request**
 ```
-http://192.168.1.60:8080/json.htm?type=devices&plan=23
+http://domoticz-ip:port/json.htm?type=devices&plan=23
 ```
 **Response**
 ```
@@ -104,7 +108,7 @@ http://192.168.1.60:8080/json.htm?type=devices&plan=23
 ### Roomplan HTTP API Request & Response List
 As the roomplan is core to create the content of the user interface, this is the request to get all the roomplans name and idx.
 ```
-http://192.168.1.60:8080/json.htm?type=plans&order=name&used=true
+http://domoticz-ip:port/json.htm?type=plans&order=name&used=true
 ```
 The data is used to set f.e. the heading in an information dialog, i.e. "Klima" and "Termine". 
 
